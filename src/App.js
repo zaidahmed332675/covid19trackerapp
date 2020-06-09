@@ -1,28 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// ALL FUNCTION DECLARATION ARE VALID
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br/>
-          By Zaid Ahmed
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div >
+    <h1>Hello World</h1>
+  </div>
   );
 }
+
+// function App(args) {
+//   return <div >REACT APP MADE BY {args.name} WHOSE AGE IS {args.age - 15}</div>
+// }
+
+// const App = function({name,age}){
+//   return <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
+// }
+
+// const App = ({name,age}) => {
+//   return <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
+// }
+
+// const App = ({name,age}) => (
+//   <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
+// )
+
+// const App = ({name,age}) => <div>Hello World {name} WHOSE AGE IS {age - 21} </div>;
 
 export default App;
