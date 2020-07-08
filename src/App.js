@@ -1,32 +1,28 @@
 import React from 'react';
-import './App.css';
 
-// ALL FUNCTION DECLARATION ARE VALID
+//IMPORTING MATERIAL UI LIBRARIES
+import {Box} from '@material-ui/core';
 
-function App() {
+//IMPORTING ALL COMPONENTS
+import { WebHeader,PreventSection,StatsSection,Maps } from './components/';
+import {ContextProvider} from './ContextApi/ContextApi';
+
+// IMPORTING CUSTOM CSS
+import AppStyles from './App.module.css';
+
+
+function App(){
+
   return (
-  <div >
-    <h1>Hello World</h1>
-  </div>
+    <Box className={AppStyles.container}> 
+      <ContextProvider>
+        <WebHeader />      
+        <PreventSection />
+        <StatsSection />
+        <Maps />
+      </ContextProvider>
+    </Box>
   );
 }
-
-// function App(args) {
-//   return <div >REACT APP MADE BY {args.name} WHOSE AGE IS {args.age - 15}</div>
-// }
-
-// const App = function({name,age}){
-//   return <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
-// }
-
-// const App = ({name,age}) => {
-//   return <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
-// }
-
-// const App = ({name,age}) => (
-//   <div>Hello World {name} WHOSE AGE IS {age - 15} </div>
-// )
-
-// const App = ({name,age}) => <div>Hello World {name} WHOSE AGE IS {age - 21} </div>;
 
 export default App;
