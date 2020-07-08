@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge
     
     - name: Run Surge
-      run: surge ./build panacloud_bootcamp2020_reactApp.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build covid19_reactwebapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
