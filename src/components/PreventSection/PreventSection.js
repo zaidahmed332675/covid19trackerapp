@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 // IMPORTING COMPONENTS
-import preventStyle from './PreventSection.module.css';
+import './PreventSection.module.css';
 
 // IMPORTING BANNER
 import prevent1 from '../../images/prevent1.png';
