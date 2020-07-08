@@ -26,7 +26,7 @@ function Cards({bgColor,src,data,title}){
         return "Loading...";
     }
 
-    return  <Grid item xs={12}>
+    return  <Grid item xs={12} sm={6} md={12}>
                 <Paper elevation={3} className={classes.paper} style={{display:"flex",backgroundColor:`${bgColor}`}}>
                     <Box align="left" style={{width:"70px"}}>
                         <img src={src} alt={title} className={classes.imageSize}/>
