@@ -67,7 +67,7 @@ function PreventSection(){
             <Box mt={5}>
                 <Grid container spacing={4}>
                     
-                    <Grid item xs={12} sm={3}>
+                    <Grid item xs={12} md={3}>
                         <Grid container spacing={4}>
                             <Cards bgColor="#FBF2E9" title="Confirmed" src={confirmedStatus} data={statsData.confirmed} />
                             <Cards bgColor="#ffecb3" title="Active" src={activeStatus} data={statsData.active} />
@@ -75,7 +75,7 @@ function PreventSection(){
                             <Cards bgColor="#C8E6C9" title="Recovered" src={recoveredStatus} data={statsData.recovered} />
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} sm={9}>
+                    <Grid item xs={12} md={9}>
                         <Grid container spacing={4}>
                             <Grid item xs={12}>
                                 <Chart />
