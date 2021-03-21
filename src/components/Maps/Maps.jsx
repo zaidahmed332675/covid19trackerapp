@@ -98,7 +98,7 @@ let Maps = () => {
     return (
         <Box align="center" style={{ height: '100vh', width: '95%' , margin:"0 auto", marginTop:"30px",border:"3px solid #FBF2E9",borderRadius:"10px"}}>
             <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyDoZ6NODMb5ImzMV6nYMcOVC4UUcF1SBuQ' }}
+            bootstrapURLKeys={{ key: '' }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}>
                 {Comp}
